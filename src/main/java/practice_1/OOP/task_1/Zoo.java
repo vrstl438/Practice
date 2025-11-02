@@ -1,15 +1,14 @@
 package practice_1.OOP.task_1;
 
 public class Zoo {
-    Animal animal;
+    static Animal animal;
 
-    public void setAnimal(Animal animal){
-        this.animal = animal;
+    public static void addAnimal(Animal newAnimal){
+        animal = newAnimal;
     }
 
-    public void showAnimalBehavior(){
-        animal.makeSound();
+    public static void behaviorAnimal(){
         animal.move();
+        animal.voice();
     }
-
 }
