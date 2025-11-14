@@ -1,18 +1,15 @@
 package firstJavaProgramHomeWork;
 
-import lyambdaStreamApi.part_1.MathOperation;
-
 public class Main {
     public static void main(String[] args) {
-
         //task-1
-        MathOperations.add(3,6);
-        MathOperations.subtract(3,6);
-        MathOperations.multiply(3,6);
-        MathOperations.divide(3,6);
+        MathOperations.add(3, 6);
+        MathOperations.subtract(3, 6);
+        MathOperations.multiply(3, 6);
+        MathOperations.divide(3, 6);
 
         //task-2
-        MathOperations.findMax(2,5);
+        MathOperations.findMax(2, 5);
 
         //task-3
         MathOperations.difference(50, 20);
@@ -28,7 +25,7 @@ public class Main {
         MathOperations.averageSpeed(10, 5);
 
         //task-7
-        MathOperations.findHypotenuse(10,20);
+        MathOperations.findHypotenuse(10, 20);
 
         //task-8
         MathOperations.circleCircumference(1);
@@ -39,6 +36,5 @@ public class Main {
         //task-10
         MathOperations.celsiusToFahrenheit(50);
         MathOperations.fahrenheitToCelsius(122);
-
     }
 }

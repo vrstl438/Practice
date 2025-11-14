@@ -1,97 +1,127 @@
 package firstJavaProgramHomeWork;
 
 public class MathOperations {
+
     //task-1
-    public static void add(int x, int y){
-        System.out.println(x + y);
+    public static int add(int x, int y){
+        int result = x + y;
+        System.out.println(result);
+        return result;
     }
 
-    public static void subtract(int x, int y){
-        System.out.println(x - y);
+    public static int subtract(int x, int y){
+        int result = x - y;
+        System.out.println(result);
+        return result;
     }
 
-    public static void multiply(int x, int y){
-        System.out.println(x * y);
+    public static int multiply(int x, int y){
+        int result = x * y;
+        System.out.println(result);
+        return result;
     }
 
-    public static void divide(int x, int y){
-        System.out.println(x / y);
+    public static double divide(int x, int y){
+        if (y == 0){
+            System.out.println("Деление на ноль невозможно");
+            return 0;
+        }
+        double result = (double) x / y;
+        System.out.println(result);
+        return result;
     }
 
     //task-2
-    public static void findMax(int a, int b){
+    public static int findMax(int a, int b){
         if (a > b){
             System.out.println(a);
+            return a;
         } else if (b > a) {
             System.out.println(b);
-        }else {
-            System.out.println("Числа одинковые");
+            return b;
+        } else {
+            System.out.println("Числа одинаковые");
+            return a;
         }
     }
 
     //task-3
-    public static void difference(int x, int y){
-        if (x >= y){
-            System.out.println(x - y);
-        } else {
-            System.out.println(y -x);
-        }
+    public static int difference(int x, int y){
+        int result = Math.abs(x - y);
+        System.out.println(result);
+        return result;
     }
 
     //task-4
-    public static void squareArea(int side){
+    public static int squareArea(int side){
         int area = side * side;
         System.out.println(area);
+        return area;
     }
 
-    public static void squarePerimeter(int side){
+    public static int squarePerimeter(int side){
         int perimeter = side * 4;
         System.out.println(perimeter);
+        return perimeter;
     }
 
     //task-5
-    public static void convertSecondsToMinutes(int seconds){
+    public static double convertSecondsToMinutes(int seconds){
         double min = (double) seconds / 60;
         System.out.println(min);
+        return min;
     }
 
     //task-6
-    public static void averageSpeed(double distance, double time) {
+    public static double averageSpeed(double distance, double time) {
         if (time <= 0) {
-            System.out.println("Время не может быть меньше нуля!");
-        }else{
-            System.out.println(distance / time);
+            System.out.println("Время не может быть меньше или равно нулю!");
+            return 0;
         }
+        double result = distance / time;
+        System.out.println(result);
+        return result;
     }
 
     //task-7
-    public static void findHypotenuse(double a, double b) {
+    public static double findHypotenuse(double a, double b) {
         if (a <= 0 || b <= 0){
             System.out.println("Введите положительные аргументы");
-        }else {
-            System.out.println( Math.sqrt(a * a + b * b));
+            return 0;
         }
+        double result = Math.sqrt(a * a + b * b);
+        System.out.println(result);
+        return result;
     }
 
     //task-8
-    public static void circleCircumference(double radius) {
-        System.out.println(2 * Math.PI * radius);
+    public static double circleCircumference(double radius) {
+        double result = 2 * Math.PI * radius;
+        System.out.println(result);
+        return result;
     }
 
     //task-9
-    public static void calculatePercentage(double total, double part) {
+    public static double calculatePercentage(double total, double part) {
         if (total == 0) {
-            System.out.println("нельзя вводить ноль");
+            System.out.println("Значение total не может быть нулём");
+            return 0;
         }
-        System.out.println((part / total) * 100);
+        double percent = (part / total) * 100;
+        System.out.println(percent);
+        return percent;
     }
 
     //task-10
-    public static void celsiusToFahrenheit(double c) {
-        System.out.println(c * 9 / 5 + 32);
+    public static double celsiusToFahrenheit(double c) {
+        double result = c * 9 / 5 + 32;
+        System.out.println(result);
+        return result;
     }
 
-    public static void fahrenheitToCelsius(double f) {
-        System.out.println((f - 32) * 5 / 9);
+    public static double fahrenheitToCelsius(double f) {
+        double result = (f - 32) * 5 / 9;
+        System.out.println(result);
+        return result;
     }
 }
