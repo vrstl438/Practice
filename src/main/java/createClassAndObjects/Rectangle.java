@@ -1,29 +1,29 @@
 package createClassAndObjects;
 
 public class Rectangle {
-    int wight;
+    int width;
     int height;
 
     public Rectangle(int someWight, int someHeight){
-        this.wight = someWight;
+        this.width = someWight;
         this.height = someHeight;
     }
 
     //геттеры
     public int getWight(){
-        return wight;
+        return width;
     }
     public int getHeight(){
         return height;
     }
 
     //сеттер
-    public void setWight(int newWight){
-        this.wight = newWight;
+    public void setWidth(int newWight){
+        this.width = newWight;
     }
 
     public void calculateArea(){
-        int area = wight * height;
+        int area = width * height;
         System.out.println("Плоащдь прямоугольника равно: " +  area);
     }
 

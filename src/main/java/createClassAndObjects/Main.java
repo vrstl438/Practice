@@ -8,7 +8,7 @@ public class Main {
         System.out.println("---------------");
 
         Rectangle rec1 = new Rectangle(10, 10);
-        rec1.setWight(5);
+        rec1.setWidth(5);
         rec1.calculateArea();
         System.out.println("---------------");
 

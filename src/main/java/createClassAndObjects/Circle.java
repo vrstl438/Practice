@@ -16,7 +16,7 @@ public class Circle {
     }
 
     public void calculateArea(){
-        double area = Math.PI * radius;
+        double area = Math.PI * radius * radius;
         System.out.println("Площадь круга равна: " + area);
     }
 

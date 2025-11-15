@@ -28,8 +28,13 @@ public class BankAccount {
     }
 
     public void withdraw(int amount){
-        this.balance = this.balance - amount;
-        System.out.println("Баланс пользователя - " + this.owner + "   равен - " + this.balance);
+        if (amount <= this.balance){
+            this.balance = this.balance - amount;
+            System.out.println("Баланс пользователя - " + this.owner + "   равен - " + this.balance);
+        }else{
+            System.out.println("У вас недостаточно средств");
+        }
+
     }
 
     public void printBalance(){
