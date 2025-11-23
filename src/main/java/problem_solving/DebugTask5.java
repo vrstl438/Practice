@@ -4,11 +4,10 @@ public class DebugTask5 {
     public static void main(String[] args) {
         Person person = new Person("Alice", 25);
         updateAge(person);
-
+        System.out.println("Updated age: " + person.getAge());
     }
     public static void updateAge(Person person) {
-        person = new Person(person.getName(), person.getAge() + 1);
-        System.out.println("Updated age: " + person.getAge());
+        person.setAge(person.getAge() + 1);
     }
 }
 class Person {
@@ -20,4 +19,8 @@ class Person {
     }
     public String getName() { return name; }
     public int getAge() { return age; }
+
+    public void setAge(int age){
+        this.age = age;
+    }
 }
