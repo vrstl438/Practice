@@ -1,3 +1,5 @@
+package Test_Practice;
+
 import Tests_Practice.StringReverse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

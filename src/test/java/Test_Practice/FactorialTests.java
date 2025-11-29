@@ -1,3 +1,5 @@
+package Test_Practice;
+
 import Tests_Practice.Factorial;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
