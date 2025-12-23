@@ -1,6 +1,6 @@
 package Test_Practice;
 
-import Tests_Practice.IsLeapYear;
+import HomeTasks.Tests_Practice.IsLeapYear;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;

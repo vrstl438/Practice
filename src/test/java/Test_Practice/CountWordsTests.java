@@ -1,6 +1,6 @@
 package Test_Practice;
 
-import Tests_Practice.CountWords;
+import HomeTasks.Tests_Practice.CountWords;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
